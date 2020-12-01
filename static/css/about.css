@@ -1,0 +1,14 @@
+.about {
+    padding-top: 5rem;
+}
+
+.about__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.about__display-image {
+    position: relative;
+    z-index: 3;
+}
+

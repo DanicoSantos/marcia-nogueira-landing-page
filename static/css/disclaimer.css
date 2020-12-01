@@ -1,0 +1,25 @@
+.disclaimer {
+    min-height      : 20rem;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background: url('../img/bg-disclaimer.jpg') no-repeat center center;
+    background-size: cover;
+    color           : #fff;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.disclaimer__text {
+    text-align  : center;
+    font-size   : 1.5rem;
+    margin-left : 5rem;
+    margin-right: 5rem;
+}
+
+.disclaimer__horizontal-divider {
+    border-top: solid 5px #fff;
+    padding   : 0.25rem;
+    width     : 5%;
+    margin    : 0 auto;
+}

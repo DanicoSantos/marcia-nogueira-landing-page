@@ -1,0 +1,47 @@
+.info {
+    margin: 5rem 0 10rem;
+    background-color: var(--secondary);
+    position: relative;
+}
+
+.info::before {
+    content: '';
+    background: url('../img/info-overlay-top.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -5rem;
+    height: 5rem;
+    width: 100%;
+
+}
+
+.info::after {
+    content: '';
+    background: url('../img/info-overlay-bottom.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -5rem;
+    height: 5rem;
+    width: 100%;
+
+}
+
+.info__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.info__content {
+    border-top: solid 2px var(--primary);
+    padding-top: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+}
+
+.info__reference {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ccc;
+}

@@ -1,0 +1,53 @@
+.testemonials {
+    padding: 5rem 0 2.5rem;
+    background-color: var(--primary);
+    margin: 10rem 0 5rem;
+    position: relative;
+
+}
+
+.testemonials::before {
+    content: '';
+    background: url('../img/testemonials-overlay-top.svg') no-repeat -8rem;
+    background-size: cover;
+    position: absolute;
+    top: -5rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.testemonials::after {
+    content: '';
+    background: url('../img/testemonials-overlay-bottom.svg') no-repeat -8rem;
+    background-size: cover;
+    position: absolute;
+    bottom: -5rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.testemonials .carousel-item.active {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.testemonials .carousel__text {
+    color     : #fff;
+    padding   : 5rem 10rem;
+    text-align: center;
+}
+
+.testemonials .carousel-control-prev-icon {
+    background-image: url('../img/prev-icon.svg');
+}
+
+.testemonials .carousel-control-next-icon {
+    background-image: url('../img/next-icon.svg');
+}
+
+.testemonials .carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width : 2rem;
+    height: 2rem;
+}

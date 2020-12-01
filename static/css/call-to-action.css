@@ -1,0 +1,36 @@
+.call-to-action {
+    padding-top: 5rem;
+    color: #fff;
+}
+
+.call-to-action__content {
+    background-color: var(--primary);
+    border-radius: 1rem;
+}
+
+.call-to-action__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.call-to-action__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.call-to-action__vertical-divider {
+    border-left: solid 1px #fff;
+    padding: 1px;
+    width: 1px;
+    height: 50%;
+}
+
+.call-to-action__action-button {
+    border-radius: 1.2rem;
+    border-width: 2px;
+}

@@ -1,0 +1,6 @@
+.footer {
+    padding-top: 5rem;
+    margin-top: 5rem;
+    min-height: 10rem;
+    background-color: var(--primary);
+}

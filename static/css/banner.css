@@ -1,0 +1,47 @@
+.banner {
+    min-height: 80vh;
+    background: url('../img/bg-banner.jpg') no-repeat 5rem -2rem;
+    background-size: cover;
+    color: #fff;
+}
+
+.banner__container {
+    padding-top: 5rem;
+    height: 80vh;
+    background-color: var(--primary);
+}
+
+.banner__container::after {
+    content: '';
+    background: url('../img/banner-overlay-right.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: -37%;
+    height: 100%;
+    width: 40%;
+}
+
+.banner__container::before {
+    content: '';
+    background: url('../img/banner-overlay-left.svg') no-repeat;
+    background-size: cover;
+    background-color: var(--primary);
+    position: absolute;
+    top: 0;
+    left: -40%;
+    height: 100%;
+    width: 40%;
+}
+
+.banner__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.banner__subtitle {
+    font-size: 1.2rem;
+    border-top: solid 2px #fff;
+    padding-top: 0.5rem;
+}
