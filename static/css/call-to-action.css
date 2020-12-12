@@ -12,7 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    font-size: 1.2rem;
+    padding: 2rem;
 }
 
 .call-to-action__button {
@@ -20,7 +21,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 3rem;
+    padding: 2rem;
+}
+
+.call-to-action__question {
+    font-size: 1.2rem;
 }
 
 .call-to-action__vertical-divider {
@@ -30,7 +35,29 @@
     height: 50%;
 }
 
+.call-to-action__horizontal-divider {
+    border-top: solid 2px #fff;
+    padding: 1px;
+    width: 25%;
+    height: 1px;
+}
+
 .call-to-action__action-button {
     border-radius: 1.2rem;
     border-width: 2px;
+}
+
+@media (min-width: 992px) {
+    .call-to-action__text {
+    padding: 3rem;
+    font-size: 1rem;
+    }
+
+    .call-to-action__button {
+        padding: 3rem;
+    }
+    
+    .call-to-action__question {
+        font-size: 1rem;
+    }
 }

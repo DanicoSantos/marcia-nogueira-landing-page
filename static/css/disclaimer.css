@@ -12,14 +12,22 @@
 
 .disclaimer__text {
     text-align  : center;
-    font-size   : 1.5rem;
-    margin-left : 5rem;
-    margin-right: 5rem;
+    font-size   : 1.2rem;
 }
+
 
 .disclaimer__horizontal-divider {
     border-top: solid 5px #fff;
     padding   : 0.25rem;
     width     : 5%;
     margin    : 0 auto;
+}
+
+@media (min-width: 992px) {
+    .disclaimer__text {
+        text-align  : center;
+        font-size   : 1.5rem;
+        margin-left : 5rem;
+        margin-right: 5rem;
+    }
 }
