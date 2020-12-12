@@ -45,3 +45,9 @@
     border-top: solid 2px #fff;
     padding-top: 0.5rem;
 }
+
+@media (min-width: 1500px) {
+    .banner {
+        background-position: left top;
+    }
+}
