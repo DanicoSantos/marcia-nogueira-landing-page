@@ -33,11 +33,13 @@
     padding-top: 0.5rem;
 }
 
+
+
 @media (min-width: 720px) {
     .banner {
-        background: url('../img/bg-banner.jpg') no-repeat;
-        background-size: cover;
-        background-position-x: -25rem;
+        background           : url('../img/bg-banner.jpg') no-repeat;
+        background-size      : cover;
+        background-position-x: -18rem;
     }
 
     .banner__container {
@@ -56,6 +58,23 @@
 
 }
 
+@media (min-width: 992px) {
+    .banner {
+        background-position-x: -25rem;
+    }
+
+    .banner__container::after {
+        content        : '';
+        background     : url('../img/banner-overlay-right.svg') no-repeat;
+        background-size: cover;
+        position       : absolute;
+        top            : 0;
+        right          : -37%;
+        height         : 100%;
+        width          : 40%;
+    }
+}
+
 @media (min-width: 1080px) {
     .banner {
         min-height         : 80vh;
@@ -65,33 +84,23 @@
     .banner__container {
         height: 80vh;
     }
-}
 
-.banner__container::after {
-    content        : '';
-    background     : url('../img/banner-overlay-right.svg') no-repeat;
-    background-size: cover;
-    position       : absolute;
-    top            : 0;
-    right          : -37%;
-    height         : 100%;
-    width          : 40%;
-}
 
-.banner__container::before {
-    content         : '';
-    background      : url('../img/banner-overlay-left.svg') no-repeat;
-    background-size : cover;
-    background-color: var(--primary);
-    position        : absolute;
-    top             : 0;
-    left            : -40%;
-    height          : 100%;
-    width           : 40%;
-}
+    .banner__container::before {
+        content         : '';
+        background      : url('../img/banner-overlay-left.svg') no-repeat;
+        background-size : cover;
+        background-color: var(--primary);
+        position        : absolute;
+        top             : 0;
+        left            : -40%;
+        height          : 100%;
+        width           : 40%;
+    }
 }
 
 @media (min-width: 1500px) {
     .banner {
         background-position: left top;
     }
+}
