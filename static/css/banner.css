@@ -8,6 +8,7 @@
     padding-top     : 5rem;
     height          : 80vh;
     background-color: transparent;
+
 }
 
 .banner__container::after {
@@ -25,12 +26,16 @@
     font-size    : 2rem;
     font-weight  : bold;
     margin-bottom: 2rem;
+    position     : relative;
+    z-index      : 9;
 }
 
 .banner__subtitle {
     font-size  : 1rem;
     border-top : solid 2px #fff;
     padding-top: 0.5rem;
+    position   : relative;
+    z-index    : 9;
 }
 
 
@@ -83,6 +88,7 @@
 
     .banner__container {
         height: 80vh;
+
     }
 
 

@@ -1,6 +1,13 @@
+
+/* Footer */
 .footer {
     padding-top: 5rem;
     margin-top: 5rem;
     min-height: 10rem;
     background-color: var(--primary);
+}
+
+.footer__divide {
+    border-bottom: solid;
+    border-color: var(--light);
 }

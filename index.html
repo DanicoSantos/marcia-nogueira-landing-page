@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="static/css/animations.css">
     <link rel="stylesheet" href="static/css/base.css">
     <link rel="stylesheet" href="static/css/navbar.css">
     <link rel="stylesheet" href="static/css/banner.css">
@@ -57,8 +58,8 @@
 
     <!-- Banner -->
     <section class="banner">
-        <div class="container mx-sm-0 mx-xl-auto h-100">
-            <div class="row h-100">
+        <div class="container mx-sm-0 mx-xl-auto h-100" >
+            <div class="row h-100" >
                 <div class="col-xl-4 pl-sm-5 pl-xl-auto col-sm-6 d-flex d-xl-block flex-column justify-content-end justify-content-sm-center banner__container">
                     <h1 class="banner__title">Faça da Excelência um hábito</h1>
                     <p class="banner__subtitle">Engaje seus colaboradores para sua empresa alcançar novos patamares.</p>
@@ -73,7 +74,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-xl-6">
                     <figure class="about__display-image">
-                        <img src="static/img/display-photo.png" width="85%" height="auto" alt="Marcia Nogueira">
+                        <img src="static/img/display-photo.png" data-animate="scroll" width="85%" height="auto" alt="Marcia Nogueira">
                     </figure>
                 </div>
                 <div class="col-sm-8 offset-sm-2 offset-xl-0 text-sm-center text-xl-left col-xl-6">
@@ -225,7 +226,7 @@
                                 <div class="col-md-5 col-12">
                                     <div class="call-to-action__button">
                                         <p class="call-to-action__question font-weight-bold">Vamos conversar?</p>
-                                        <button class="btn btn-outline-light call-to-action__action-button">Whatsapp</button>
+                                        <a class="btn btn-outline-light call-to-action__action-button" href="http://bit.ly/3gtb6J7" target="_blank">Whatsapp</a>
                                     </div>
                                 </div>
                             </div>
@@ -240,8 +241,22 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">Footer</div>
-                <div class="col-md-6">Social</div>
+                <div class="col-12 col-sm-4 text-center text-sm-left py-2 py-sm-0">
+                    <a href="https://www.instagram.com/marcianogueira.oficial/" class="footer__illustration" title="instagram"
+                        target="_blank">
+                        <img src="static/img/instagram-icon.svg" alt="Instagram">
+                        <p class="footer__text text-white">@marcianogueira.oficial</p>
+                    </a>
+
+                </div>
+                <div class="offset-5 d-sm-none col-2 footer__divide"></div>
+
+                <div class="col-12 offset-sm-4 col-sm-4 text-center text-sm-right pt-3 pt-sm-0">
+                    <p class="footer__text text-white">contato@palestrantemarcianogueira.com.br</p>
+                    <p class="footer__text text-white footer__text_contact">91 8167-9980</p>
+
+                </div>
+
             </div>
         </div>
     </footer>
@@ -261,6 +276,11 @@
                 interval: 5000,
             })
         </script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+        <script src="static/js/index.js"></script>
 </body>
 
 </html>
