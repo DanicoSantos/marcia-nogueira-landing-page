@@ -1,53 +1,97 @@
 .banner {
-    min-height: 80vh;
-    background: url('../img/bg-banner.jpg') no-repeat 5rem -2rem;
+    background     : url('../img/bg-banner-mobile.png') no-repeat;
     background-size: cover;
-    color: #fff;
+    color          : #fff;
 }
 
 .banner__container {
-    padding-top: 5rem;
-    height: 80vh;
-    background-color: var(--primary);
+    padding-top     : 5rem;
+    height          : 80vh;
+    background-color: transparent;
 }
 
 .banner__container::after {
     content: '';
-    background: url('../img/banner-overlay-right.svg') no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: -37%;
-    height: 100%;
-    width: 40%;
+
 }
 
 .banner__container::before {
     content: '';
-    background: url('../img/banner-overlay-left.svg') no-repeat;
-    background-size: cover;
-    background-color: var(--primary);
-    position: absolute;
-    top: 0;
-    left: -40%;
-    height: 100%;
-    width: 40%;
+
+
 }
 
 .banner__title {
-    font-size: 3.2rem;
-    font-weight: bold;
+    font-size    : 2rem;
+    font-weight  : bold;
     margin-bottom: 2rem;
 }
 
 .banner__subtitle {
-    font-size: 1.2rem;
-    border-top: solid 2px #fff;
+    font-size  : 1rem;
+    border-top : solid 2px #fff;
     padding-top: 0.5rem;
+}
+
+@media (min-width: 720px) {
+    .banner {
+        background: url('../img/bg-banner.jpg') no-repeat;
+        background-size: cover;
+        background-position-x: -25rem;
+    }
+
+    .banner__container {
+        background-color: var(--primary);
+    }
+
+    .banner__title {
+        font-size: 3.2rem;
+
+    }
+
+    .banner__subtitle {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media (min-width: 1080px) {
+    .banner {
+        min-height         : 80vh;
+        background-position: 5rem -2rem;
+    }
+
+    .banner__container {
+        height: 80vh;
+    }
+}
+
+.banner__container::after {
+    content        : '';
+    background     : url('../img/banner-overlay-right.svg') no-repeat;
+    background-size: cover;
+    position       : absolute;
+    top            : 0;
+    right          : -37%;
+    height         : 100%;
+    width          : 40%;
+}
+
+.banner__container::before {
+    content         : '';
+    background      : url('../img/banner-overlay-left.svg') no-repeat;
+    background-size : cover;
+    background-color: var(--primary);
+    position        : absolute;
+    top             : 0;
+    left            : -40%;
+    height          : 100%;
+    width           : 40%;
+}
 }
 
 @media (min-width: 1500px) {
     .banner {
         background-position: left top;
     }
-}
